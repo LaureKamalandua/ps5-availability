@@ -1,5 +1,5 @@
 {
-  "name": "ps5-availability",
+  "name": "@laurekamalandua/ps5-availability",
   "version": "0.0.0",
   "description": "Module to retrieve ps5 pre-order and availability status",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/LaureKamalandua/ps5-availability.git"
+    "url": "git+https://github.com/LaureKamalandua/ps5-availability.git"
   },
   "keywords": [
     "ps5",
@@ -26,5 +26,9 @@
   },
   "devDependencies": {
     "eslint": "^7.13.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/LaureKamalandua/ps5-availability/issues"
+  },
+  "homepage": "https://github.com/LaureKamalandua/ps5-availability#readme"
 }
