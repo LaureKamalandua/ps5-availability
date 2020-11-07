@@ -1,0 +1,30 @@
+{
+  "name": "ps5-availability",
+  "version": "0.0.0",
+  "description": "Module to retrieve ps5 pre-order and availability status",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No test is specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LaureKamalandua/ps5-availability.git"
+  },
+  "keywords": [
+    "ps5",
+    "crawler"
+  ],
+  "author": "Laure Kamalandua",
+  "license": "MIT",
+  "dependencies": {
+    "bunyan": "^1.8.14",
+    "bunyan-format": "^0.2.1",
+    "colors": "^1.4.0",
+    "dotenv": "^8.2.0",
+    "puppeteer": "^5.4.1",
+    "uuid": "^8.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.13.0"
+  }
+}
