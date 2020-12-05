@@ -547,9 +547,11 @@ class Environment {
     }
   }
   static async runJobQueue(jobList) {
+    let results = [];
     for (let i = 0; i < jobList.length; i++) {
-      await jobList[i].checkAvailability();
+      results.push(await jobList[i].checkAvailability());
     }
+    return results;
   }
   static async checkAvailability(jobList, browser) {
     try {
@@ -570,13 +572,13 @@ class Environment {
       }
       if (Array.isArray(jobList)) {
         let jobs = await Environment.createJobQueue(browser, jobList);
-        await Environment.runJobQueue(jobs);
+        return await Environment.runJobQueue(jobs);
       } else if (typeof jobList === 'string') {
         const page = (await browser.pages())[0];
         const retailerClass = Environment.getRetailer(jobList);
         const site = new retailerClass(page);
         site.job = new JobUnit();
-        await site.checkAvailability();
+        return await site.checkAvailability();
       } else {
         throw new Error(`The supplied parameter for 'jobList' is not defined`);
       }

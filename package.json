@@ -4,7 +4,8 @@
   "description": "Module to retrieve ps5 pre-order and availability status",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"No test is specified\""
+    "test": "echo \"No test is specified\"",
+    "check": "eslint '**/*.js'"
   },
   "repository": {
     "type": "git",
